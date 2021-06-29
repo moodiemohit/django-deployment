@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<h3>Signup yourself here</h3>
+<div class="container">
+  <div class="jumotron">
+    <form method="post" enctype="multipart/form-data">
+      {{ form.as_p }}
+      {{form1.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="" value="Register">
+    </form>
+
+  </div>
+
+</div>
+{% endblock %}
